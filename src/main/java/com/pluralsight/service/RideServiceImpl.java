@@ -18,4 +18,14 @@ public class RideServiceImpl implements RideService {
 	public List<Ride> getRides() {
 		return rideRepository.getRides();
 	}
+
+	@Override
+	public Ride CreateRide(Ride ride) {
+		// TODO Auto-generated method stub
+		return rideRepository.insert(ride);
+	}
+
+	
+
+	
 }

@@ -2,6 +2,8 @@ package com.pluralsight.model;
 
 public class Ride {
 
+	
+
 	private String name;
 	private int duration;
 
@@ -19,6 +21,10 @@ public class Ride {
 
 	public void setName(String name) {
 		this.name = name;
-	}
+	} 
 	
+	@Override
+	public String toString() {
+		return "Ride [name=" + name + ", duration=" + duration + "]";
+	}
 }
